@@ -1,21 +1,28 @@
-# Title (replace with your title)
+# Matching an Email with Regex
 
-Introductory paragraph (replace this with your text)
+Here is an easy way to search and match an email using Regex, an explanation on how it works and how to apply it to your code.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+When searching through data, it is impossible to know what the exact input of the user will be. Regex allows you to search based on matching criteria for patters that fit the description of an email. The following snipped allows you to sift through endless literals using meta to find your search request.
+
+<code>/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/</code>
 
 ## Table of Contents
 
-- [Anchors](#anchors)
-- [Quantifiers](#quantifiers)
-- [Grouping Constructs](#grouping-constructs)
-- [Bracket Expressions](#bracket-expressions)
-- [Character Classes](#character-classes)
-- [The OR Operator](#the-or-operator)
-- [Flags](#flags)
-- [Character Escapes](#character-escapes)
+- [Matching an Email with Regex](#matching-an-email-with-regex)
+  - [Summary](#summary)
+  - [Table of Contents](#table-of-contents)
+  - [Regex Components](#regex-components)
+    - [Anchors](#anchors)
+    - [Quantifiers](#quantifiers)
+    - [Grouping Constructs](#grouping-constructs)
+    - [Bracket Expressions](#bracket-expressions)
+    - [Character Classes](#character-classes)
+    - [The OR Operator](#the-or-operator)
+    - [Flags](#flags)
+    - [Character Escapes](#character-escapes)
+  - [Author](#author)
 
 ## Regex Components
 
