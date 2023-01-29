@@ -84,6 +84,7 @@ our code:
 <code>/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/</code>
 
 our example here uses brackets to create an array requesting all alphabetical characters from a to z and all numerals from 0 to 9 in between the brackets [a-z0-9_\.-].
+After that, it looks for a @ after the alphanumericals to ensure it falls under the guidelines of an email.
 
 ### Character Classes
 
@@ -102,9 +103,12 @@ our code uses brackets to specify all lowercase letters
 
 The or operator is used as pipe character '|'. It can be used to mix and match different combination of characters in a parenthesis, and will return any combination including the given input. As an exampe we can observe the word (pat). It is displayed as (p|a|t), but could also allow us to receive the input tap, or apt.
 
+Our code does not use the 'OR' operator.
+
 ### Flags
 
 Flags are referened with the letter g. This stands for global search and it allows us to search for all potential strings. The search is not case senstive.
+
 Our code does not have any flags at the moment.
 
 ### Character Escapes
@@ -116,6 +120,12 @@ Here is a list of some common used commands which can be referenced with escape 
     2. \W is used to specify a NON-word character
     3. \d is used to specify a digit
     4. \D us used to specify a NON-digit
+    5. \. matches any character, except the one for a new line
+
+our code:
+<code>/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/</code>
+
+our code uses the character escape "\." which means that the info provided can match any of the characters in the array ot atoms.
 
 ## Author
 
